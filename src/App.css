@@ -162,3 +162,39 @@ button {
   font-size: 30px;
 
 }
+.Footer_bg {
+  background: red;
+}
+.footer_text_primary a{
+  color: #B3B4B7;
+}
+.footer_text_primary a:hover{
+  color: #77787E;
+}
+.fa-facebook:before {
+  color: #1977F3;
+  font-size: 24px;
+}
+.fa-twitter:before {
+  color: #1DA1F2;
+  font-size: 24px;
+}
+.fa-instagram:before {
+  color:#C837AB ;
+  font-size: 24px;
+}
+.fa-facebook:hover {
+  cursor: pointer;
+}
+.fa-twitter:hover {
+  cursor: pointer;
+}
+.fa-instagram:hover {
+  cursor: pointer;
+}
+.copy_right_text {
+  color: #7A7B81;
+  font-weight: 400;
+  font-size: 15px;
+
+}
