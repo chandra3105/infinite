@@ -2,37 +2,163 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container {
+  width: 700px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fa-outdent:before {
+  content: "\f03b";
+  color: green;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header_color{
+  background :#6648CD;
 }
-
-.App-link {
-  color: #61dafb;
+.MuiList-padding {
+  background :#6648CD;
 }
+.MuiTypography-root {
+  color: #D1C8F0;
+}
+.fa-grip-vertical:before {
+  color: #D1C8F0;
+  font-size: 24px;
+}
+.fa-bookmark:before {
+  color: #D1C8F0;
+  font-size: 24px;
+}
+.fa-chart-pie:before {
+  color: #D1C8F0;
+  font-size: 24px;
+}
+.fa-puzzle-piece:before {
+  color: #D1C8F0;
+  font-size: 24px;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: #D1C8F0 !important;
+  font-weight: 500 !important;
+  font-size: 14.4px !important;
+}
+.nav-item .nav-link {
+  display: flex !important;
+  align-items: center !important;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #fff !important;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover .fa-grip-vertical:before {
+  color: #fff !important;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover .fa-bookmark:before {
+  color: #fff !important;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover .fa-chart-pie:before {
+  color: #fff !important;
+}
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover .fa-puzzle-piece:before {
+  color: #fff !important;
+}
+.MuiInput-underline:before {
+  border-bottom: 1px solid rgb(0 0 0 / 0%) !important;
+}
+.MuiIconButton-label {
+  color: #FFFFFF !important;
+}
+.navbar {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0%), 0 2px 10px 0 rgb(0 0 0 / 0%) !important;
+}
+.user-name {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 14.4px !important;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%) !important;
+}
+button:focus {
+  outline: 0px auto -webkit-focus-ring-color !important;
+  border-bottom: 3px solid #6648CD;
+  color: #6648CD !important;
+  font-weight: 500;
+}
+.MuiTab-root {
+    min-width: 105px !important;
+}
+button {
+  text-transform: unset !important;
+}
+.container-wrapper-bg {
+  background: #EEEEF2;
+}
+.day {
+  color: #6648CD ;
+  font-weight: 400 ;
+}
+.date-year {
+  font-weight: 700 ;
+  font-size: 38px;
+  color: #393A42;
+  letter-spacing: -0.9px;
+}
+.border_left {
+  border-left: 1px solid #AFAFB6;
+}
+.fa-comment-alt:before {
+  color: #6648CD;
+  font-size: 30px;
+}
+.primary_text {
+  color: #000000 !important;
+}
+.MuiCardContent-root {
+  padding: 0px !important;
+}
+.full_height {
+  height: 31vh;
+}
+.MuiTab-textColorPrimary {
+  color: #42444C !important;
+}
+.full_width {
+  width: 100 !important;
+}
+.card_ctr {
+  background: #ffffff;
+  border-radius: 5px;
+}
+.ima_border_rad {
+  border-radius: 0px 5px 5px 1px;
+}
+.event_sub_title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3C3E46;
+}
+.time_number_format {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888C9D;
+}
+.fa-clock:before {
+  font-size: 13px;
+  color: #888C9D;
+}
+.inside_container_title {
+  font-weight: 900;
+    letter-spacing: -0.1px;
+    font-size: 18px;
+}
+.inside_container_text {
+  color: #9397A7;
+  line-height: 30px;
+}
+.fa-check:before {
+  color: #6648CD;
+    font-size: 30px;
+}
+.second .fa-bookmark:before {
+  color: #6648CD;
+  font-size: 30px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
