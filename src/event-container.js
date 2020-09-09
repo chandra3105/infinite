@@ -12,8 +12,20 @@ import { MDBIcon } from "mdbreact";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 
 export default class EventComponent extends Component {
+  state = {
+    modal3: false,
+  }
+  
+ 
+  toggle = nr => () => {
+    let modalNumber = 'modal' + nr
+    this.setState({
+      [modalNumber]: !this.state[modalNumber]
+    });
+  }
   render() {
     return (
       <div><div className="container">
@@ -34,7 +46,7 @@ export default class EventComponent extends Component {
               <div className="col-md-3 mt-5">
                 <div className="pl-4">
                   <div className="day">Wednesday</div>
-                  <div className="date-year">October 16, <br />2019</div>
+                  <div className="date-year">October 16, <br className="Br" />2019</div>
                 </div>
               </div>
               <div className="col-md-9">
@@ -45,7 +57,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="comment-alt" />
                           </div>
@@ -65,8 +77,9 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">The Best Tropical Plants You Can Grow Indoors</div>
                                   <div className="inside_container_text">&#8220;Gotta get some plants now.Thanks for this super help article. Love it&#8221;</div>
+                                  <div onClick={this.toggle(3)} className="read_me">Read more</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event1} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -79,7 +92,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="check" />
                           </div>
@@ -110,7 +123,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div className="second">
                             <MDBIcon icon="bookmark" className="pr-3 ml-2" />
                           </div>
@@ -130,7 +143,7 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">Fresh wave of climate strikes takes place around the world</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event2} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -147,7 +160,7 @@ export default class EventComponent extends Component {
               <div className="col-md-3 mt-5">
                 <div className="pl-4">
                   <div className="day">Tuesday</div>
-                  <div className="date-year">August 21, <br />2020</div>
+                  <div className="date-year">August 21, <br className="Br" />2020</div>
                 </div>
               </div>
               <div className="col-md-9">
@@ -158,7 +171,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="check" />
                           </div>
@@ -189,7 +202,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div className="second">
                             <MDBIcon icon="bookmark" className="pr-3 ml-2" />
                           </div>
@@ -209,7 +222,7 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">Travellers Cutting air travel as 'flight shame' spreads</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event3} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -222,11 +235,11 @@ export default class EventComponent extends Component {
                 </div>
               </div>
             </div>
-            <div className="row mb-4">
+            <div className="row">
               <div className="col-md-3 mt-5">
                 <div className="pl-4">
                   <div className="day">Wednesday</div>
-                  <div className="date-year">October 16, <br />2019</div>
+                  <div className="date-year">October 16, <br className="Br" />2019</div>
                 </div>
               </div>
               <div className="col-md-9">
@@ -237,7 +250,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="comment-alt" />
                           </div>
@@ -257,8 +270,9 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">The Best Tropical Plants You Can Grow Indoors</div>
                                   <div className="inside_container_text">&#8220;Gotta get some plants now.Thanks for this super help article. Love it&#8221;</div>
+                                  <div onClick={this.toggle(3)} className="read_me">Read more</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event1} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -271,7 +285,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="check" />
                           </div>
@@ -302,7 +316,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div className="second">
                             <MDBIcon icon="bookmark" className="pr-3 ml-2" />
                           </div>
@@ -322,7 +336,7 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">Fresh wave of climate strikes takes place around the world</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event2} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -339,7 +353,7 @@ export default class EventComponent extends Component {
               <div className="col-md-3 mt-5">
                 <div className="pl-4">
                   <div className="day">Tuesday</div>
-                  <div className="date-year">October 15, <br />2019</div>
+                  <div className="date-year">October 15, <br className="Br" />2019</div>
                 </div>
               </div>
               <div className="col-md-9">
@@ -350,7 +364,7 @@ export default class EventComponent extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div>
                             <MDBIcon icon="check" />
                           </div>
@@ -381,7 +395,7 @@ export default class EventComponent extends Component {
                   <div className="row mb-5">
                     <div className="col-md-12">
                       <div className="d-flex">
-                        <div className="mt-2 p-0 col-md-1">
+                        <div className="mt-2 p-0 col-md-1 hid_icon">
                           <div className="second">
                             <MDBIcon icon="bookmark" className="pr-3 ml-2" />
                           </div>
@@ -401,7 +415,7 @@ export default class EventComponent extends Component {
                                 <div className="p-4">
                                   <div className="inside_container_title mb-2">Travellers Cutting air travel as 'flight shame' spreads</div>
                                 </div>
-                                <div>
+                                <div className="eve_img">
                                   <img src={Event3} alt="event-img" className="ima_border_rad" />
                                 </div>
                               </div>
@@ -414,6 +428,29 @@ export default class EventComponent extends Component {
                 </div>
               </div>
             </div>
+
+
+            
+            
+
+            <MDBModal isOpen={this.state.modal3} toggle={this.toggle(3)} size="sm">
+              <MDBModalHeader toggle={this.toggle(3)} className="modal_title">COMMENTED</MDBModalHeader>
+              <MDBModalBody>
+                <div className="modal_header">The Best Tropical Plants You Can Grow Indoors</div>
+                <div className="modal_sub_text">&#8220;Gotta get some plants now.Thanks for this super help article. Love it&#8221;</div>
+                </MDBModalBody>
+              <MDBModalFooter>
+                <MDBBtn color="primary" size="sm" onClick={this.toggle(3)}>Close</MDBBtn>
+              </MDBModalFooter>
+            </MDBModal>
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>

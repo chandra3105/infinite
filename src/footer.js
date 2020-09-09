@@ -4,29 +4,27 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { MDBIcon } from "mdbreact";
-import IconButton from '@material-ui/core/IconButton';
-import Paper from '@material-ui/core/Paper';
 
 export default class EventComponent extends Component {
   render() {
     return (
-      <div className="">
+      <div className="footer_text_size text-center">
         <div className="container pt-4 pb-4">
-          <div className="d-flex justify-content-between">
-            <div>
+          <div className="d-flex justify-content-between flex-wrap ">
+            <div className="footer_mb_text">
               <div className="d-flex footer_text_primary">
-                <div className="pr-3 mr-1">
-                  <a href="#">Terms and Conditions</a>
+                <div className="over_write_pad">
+                  <a href="infinite.com">Terms and Conditions</a>
                 </div>
-                <div className="pr-3 mr-1">
-                  <a href="#">Privacy Policy</a>
+                <div className="over_write_pad">
+                  <a href="infinite.com">Privacy Policy</a>
                 </div>
-                <div className="pr-3 mr-1">
-                  <a href="#">Contact</a>
+                <div className="over_write_pad">
+                  <a href="infinite.com">Contact</a>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="footer_mb_text2">
               <div className="d-flex align-items-center">
                 <div>
                   <MDBIcon fab icon="facebook" className="mr-3" />

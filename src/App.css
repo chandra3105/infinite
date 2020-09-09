@@ -12,6 +12,10 @@
 }
 .header_color{
   background :#6648CD;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 .MuiList-padding {
   background :#6648CD;
@@ -115,7 +119,7 @@ button {
   padding: 0px !important;
 }
 .full_height {
-  height: 31vh;
+  height: 200px;
 }
 .MuiTab-textColorPrimary {
   color: #42444C !important;
@@ -196,5 +200,128 @@ button {
   color: #7A7B81;
   font-weight: 400;
   font-size: 15px;
-
 }
+.footer_text_size {
+  font-size: 15px;
+}
+.back_header {
+  height: 77px;
+  width: 100%;
+}
+.over_write_pad {
+  padding-right: 20px;
+}
+.modal-title {
+  color: #545454 !important;
+  font-weight: 400 !important;
+}
+@media only screen and (min-width: 992px){
+  .container {
+      max-width: 1140px !important;
+  }
+  .read_me {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .inside_container_text {
+    display: none;
+  }
+  .container {
+    max-width: 920px !important;
+  }
+  .read_me {
+    display: block;
+    font-size: 13px;
+    color: #3e1aff;
+    font-weight: 400;
+  }
+  .Br {
+    display: none;
+  }
+  .modal_header {
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 17px;
+    color: #717171;
+  }
+  .modal_sub_text {
+    color: #9397A7;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .border_left {
+    display: none;
+  }
+  .Br {
+    display: none;
+  }
+  .hid_icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .footer_mb_text {
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .footer_mb_text2 {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .eve_img {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .eve_img img {
+    max-width: 220px ;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .eve_img {
+    width: 385px;
+    overflow: hidden;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .eve_img img {
+    max-width: 270px ;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .ima_border_rad {
+    border-radius: 0px 5px 5px 1px;
+    max-width: 120px;
+  }
+  .over_write_pad {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 374px) and (max-width: 375px) {
+  .eve_img img {
+    max-width: 315px;
+  }
+  .eve_img {
+    width: 435px;
+    overflow: hidden;
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .ima_border_rad {
+    border-radius: 0px 5px 5px 1px;
+    max-width: 80px;
+  }
+  .eve_img {
+    width: 505px;
+    overflow: hidden;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .eve_img img {
+    max-width: 310px;
+  }
+}
+
+
+

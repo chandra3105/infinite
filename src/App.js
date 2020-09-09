@@ -18,36 +18,36 @@ function App() {
     <div >
       <div className="header_color">
         <div className="container">
-          <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top pt-2 pb-2">
-            <a class="navbar-brand" href="#">
+          <nav className="navbar navbar-expand-lg navbar-dark navbar-fixed-top pt-2 pb-2">
+            <a className="navbar-brand" href="infinite.com">
               <img src={logo} alt="logo-img" />
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
               aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="basicExampleNav">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+            <div className="collapse navbar-collapse" id="basicExampleNav">
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="infinite.com">
                     <MDBIcon icon="grip-vertical" className="pr-3" />
                     CHANNELS
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="infinite.com">
                     <MDBIcon icon="bookmark" className="pr-3 ml-2" />
                     BOOKMARKS
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="infinite.com">
                     <MDBIcon icon="chart-pie" className="pr-3 ml-2" />
                     OVERVIEW
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li className="nav-item">
+                  <a className="nav-link" href="infinite.com">
                     <MDBIcon icon="puzzle-piece" className="pr-3 ml-2" />
                     WIDGETS
                   </a>
@@ -76,6 +76,7 @@ function App() {
           </nav>
         </div>
       </div>
+      <div className="back_header"></div>
       <EventComponent />
       <Footer />
     </div>
