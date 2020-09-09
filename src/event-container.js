@@ -12,14 +12,12 @@ import { MDBIcon } from "mdbreact";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 
 export default class EventComponent extends Component {
   state = {
     modal3: false,
   }
-  
- 
   toggle = nr => () => {
     let modalNumber = 'modal' + nr
     this.setState({
@@ -428,11 +426,6 @@ export default class EventComponent extends Component {
                 </div>
               </div>
             </div>
-
-
-            
-            
-
             <MDBModal isOpen={this.state.modal3} toggle={this.toggle(3)} size="sm">
               <MDBModalHeader toggle={this.toggle(3)} className="modal_title">COMMENTED</MDBModalHeader>
               <MDBModalBody>
@@ -443,14 +436,6 @@ export default class EventComponent extends Component {
                 <MDBBtn color="primary" size="sm" onClick={this.toggle(3)}>Close</MDBBtn>
               </MDBModalFooter>
             </MDBModal>
-
-
-
-
-
-
-
-
           </div>
         </div>
       </div>
